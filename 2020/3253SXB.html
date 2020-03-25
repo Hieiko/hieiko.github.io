@@ -9,11 +9,11 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    哈哈 |  Hieiko
+    Hexo搭建教程 |  Hieiko
   </title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   
-  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="shortcut icon" href="/images/logo.jpg" />
   
   
 <link rel="stylesheet" href="/dist/main.css">
@@ -33,7 +33,7 @@
   <div id="app">
     <main class="content">
       <section class="outer">
-  <article id="post-笔记/哈哈" class="article article-type-post" itemscope
+  <article id="post-教程/Hexo搭建教程" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -41,7 +41,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  哈哈
+  Hexo搭建教程
 </h1>
  
 
@@ -50,12 +50,12 @@
 
     
     <div class="article-meta">
-      <a href="/2020/1FJCA06.html" class="article-date">
-  <time datetime="2020-03-25T14:33:06.319Z" itemprop="datePublished">2020-03-25</time>
+      <a href="/2020/3253SXB.html" class="article-date">
+  <time datetime="2020-03-25T17:45:29.814Z" itemprop="datePublished">2020-03-26</time>
 </a>
       
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+    <a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
   </div>
 
       
@@ -65,7 +65,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">9字</span>
+            <span class="post-count">445字</span>
         </span>
     </span>
 
@@ -99,15 +99,28 @@
       
 
       
-      <h1 id="哈哈哈哈"><a href="#哈哈哈哈" class="headerlink" title="哈哈哈哈"></a>哈哈哈哈</h1><h2 id="111"><a href="#111" class="headerlink" title="111"></a>111</h2><p>你好世界？？？</p>
-<p><img src="https://gitee.com/hieiko/blog/raw/master/1585150858_20200325234048344_13677.png" alt=""></p>
+      <h1 id="Hexo搭建教程"><a href="#Hexo搭建教程" class="headerlink" title="Hexo搭建教程"></a>Hexo搭建教程</h1><p>这是一片简单的hexo+github+node.js如何去搭建一个个人博客的教程</p>
+<a id="more"></a>)
+<h2 id="1、下载git"><a href="#1、下载git" class="headerlink" title="1、下载git"></a>1、下载git</h2><p>git下载：<a href="https://git-scm.com/download/" target="_blank" rel="noopener">git下载地址</a><br>安装很简单 应该大家都会</p>
+<h2 id="2、下载node-js"><a href="#2、下载node-js" class="headerlink" title="2、下载node.js"></a>2、下载node.js</h2><p>node.js下载：<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">node.js下载地址</a><br>node.js安装：<a href="https://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="noopener">node.js安装</a></p>
+<p>安装完前面两个之后 可以检测一下是否安装成功<br>在Dos（windows+r键 然后输入cmd即可进入）下输入以下命令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br><span class="line">node -v</span><br></pre></td></tr></table></figure>
+<p><img src="https://gitee.com/hieiko/blog/raw/master/1585160201_20200326021609022_31974.png" alt=""><br>返回如下即可</p>
+<h2 id="3、打开Gitbash，安装hexo"><a href="#3、打开Gitbash，安装hexo" class="headerlink" title="3、打开Gitbash，安装hexo"></a>3、打开Gitbash，安装hexo</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-cli -g </span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo init blog</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> blog</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm install</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo server</span></span><br></pre></td></tr></table></figure>
+<h2 id="4、初始化本地博客"><a href="#4、初始化本地博客" class="headerlink" title="4、初始化本地博客"></a>4、初始化本地博客</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate (hexo g) 生成静态文件</span><br><span class="line">$ hexo server (hexo s) 启动本地服务</span><br><span class="line">$ hexo deploy (hexo d) 提交到远程仓库</span><br><span class="line">$ hexo new page &quot;xx&quot;(hexo n page) 创建页面 </span><br><span class="line">$ hexo new &quot;xx&quot; (hexo n &quot;&quot;) 创建文章</span><br><span class="line">$ hexo d -g 生成静态并提交到远程仓库</span><br><span class="line">$ hexo s -g 生成静态文件并启动本地预览</span><br><span class="line">$ hexo clean 清除本地 public 文件</span><br></pre></td></tr></table></figure>
+<p>此时只需要运行以下代码段即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d -g 生成静态并提交到远程仓库</span><br><span class="line">$ hexo s -g 生成静态文件并启动本地预览</span><br></pre></td></tr></table></figure>
+<p><img src="https://gitee.com/hieiko/blog/raw/master/1585160753_20200326022522019_15892.png" alt=""><br>通过访问<a href="http://localhost:4000/" target="_blank" rel="noopener">本地博客</a>看到上图效果</p>
+<h2 id="5、将博客部署到GitHub"><a href="#5、将博客部署到GitHub" class="headerlink" title="5、将博客部署到GitHub"></a>5、将博客部署到GitHub</h2><h3 id="注册GitHub账户"><a href="#注册GitHub账户" class="headerlink" title="注册GitHub账户"></a>注册GitHub账户</h3><p><a href="https://github.com/" target="_blank" rel="noopener">github注册</a></p>
+<p>注册成功后，登录账号，点击右侧 “+” 号，然后点击 New repository 添加仓库，如图 ：注册成功后，登录账号，点击右侧 “+” 号，然后点击 New repository 添加仓库，如图 ：<br><img src="https://gitee.com/hieiko/blog/raw/master/1585161119_20200326023131503_17432.png" alt=""></p>
+<h3 id="GitHub-添加-SSH-key"><a href="#GitHub-添加-SSH-key" class="headerlink" title="GitHub 添加 SSH key"></a>GitHub 添加 SSH key</h3><p>检查本地是否有ssh key</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~&#x2F;.ssh</span><br><span class="line">$ ls</span><br></pre></td></tr></table></figure>
+<p>没有的话自己生成一个</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa</span><br></pre></td></tr></table></figure>
+<p>然后输入用户名 和密码 然后输入以下命令获取ssh key的值<br>$ clip &lt; ~/.ssh/id_rsa.pub”<br>然后将其添加到<br><img src="https://gitee.com/hieiko/blog/raw/master/1585162149_20200326024858631_7204.png" alt=""></p>
 
       
       <!-- reward -->
-      
-      <div id="reward-btn">
-        打赏
-      </div>
       
     </div>
     
@@ -170,7 +183,7 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/1FJCA06.html" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/3253SXB.html" alt="微信分享二维码">
     </div>
 </div>
 
@@ -188,58 +201,6 @@
   
 
   
-  
-<!-- valine评论 -->
-<div id="vcomments-box">
-    <div id="vcomments">
-    </div>
-</div>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
-<script>
-    new Valine({
-        el: '#vcomments',
-        app_id: '',
-        app_key: '',
-        path: window.location.pathname,
-        notify: 'false',
-        verify: 'false',
-        avatar: 'mp',
-        placeholder: '给我的文章加点评论吧~',
-        recordIP: true
-    });
-    const infoEle = document.querySelector('#vcomments .info');
-    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
-        infoEle.childNodes.forEach(function (item) {
-            item.parentNode.removeChild(item);
-        });
-    }
-</script>
-<style>
-    #vcomments-box {
-        padding: 5px 30px;
-    }
-
-    @media screen and (max-width: 800px) {
-        #vcomments-box {
-            padding: 5px 0px;
-        }
-    }
-
-    #vcomments-box #vcomments {
-        background-color: #fff;
-    }
-
-    .v .vlist .vcard .vh {
-        padding-right: 20px;
-    }
-
-    .v .vlist .vcard {
-        padding-left: 10px;
-    }
-</style>
-
-  
 
   
   
@@ -253,14 +214,9 @@
       <li>
         &copy;
         2015-2020
-        John Doe
+        Hieiko
       </li>
       <li>
-        
-        Powered by
-        
-        
-        <a href="https://hexo.io" target="_blank">Hexo</a> Theme <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
         
       </li>
     </ul>
@@ -389,7 +345,7 @@
 <script>
   try {
     var typed = new Typed("#subtitle", {
-      strings: ['面朝大海，春暖花开', '愿你一生努力，一生被爱', '想要的都拥有，得不到的都释怀'],
+      strings: ['保持天真是一种超能力', '他们就像时钟里没用的齿轮，每天重复无意义的生活', '人生比你想象的要短'],
       startDelay: 0,
       typeSpeed: 200,
       loop: true,
