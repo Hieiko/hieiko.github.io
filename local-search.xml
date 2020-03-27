@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>windows家庭版 安装docker教程</title>
+    <link href="/2020/1RN8AQR.html"/>
+    <url>/2020/1RN8AQR.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="windows家庭版-安装docker教程"><a href="#windows家庭版-安装docker教程" class="headerlink" title="windows家庭版 安装docker教程"></a>windows家庭版 安装docker教程</h1><p>  Docker(小鲸鱼) 是一个开源的应用容器引擎，基于<a href="https://www.runoob.com/go/go-tutorial.html" target="_blank" rel="noopener">Go语言</a> 并遵从 Apache2.0 协议开源。</p><p>Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。</p><p>容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性能开销极低。</p><p>但是大多数windows10都是家庭版 并不支持 docker的安装 由于博主是学生党 没有经济能力购买专业版windows 于是乎走上了白嫖这一道路（博主绝对支持大家拥有版权意识） 下面给大家介绍如何在家庭版win10上安装docker。</p><h2 id="1、开启Hyper-V"><a href="#1、开启Hyper-V" class="headerlink" title="1、开启Hyper-V"></a>1、开启Hyper-V</h2><p>添加方法非常简单，把以下内容保存为.cmd文件，然后以管理员身份打开这个文件。提示重启时保存好文件重启吧，重启完成就能使用功能完整的Hyper-V了。</p><pre><code>pushd &quot;%~dp0&quot;dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txtfor /f %%i in (&#39;findstr /i . hyper-v.txt 2^&gt;nul&#39;) do dism /online /norestart /add-package:&quot;%SystemRoot%\servicing\Packages\%%i&quot;del hyper-v.txtDism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL</code></pre><h2 id="2、伪装成专业版"><a href="#2、伪装成专业版" class="headerlink" title="2、伪装成专业版"></a>2、伪装成专业版</h2><p>由于Docker Desktop会在安装的时候检测系统版本，直接安装会显示安装失败。所以需要改下注册表绕过安装检测。打开注册表，定位到HKEY_LOCAL_MACHINE\software\Microsoft\Windows NT\CurrentVersion，点击current version，在右侧找到EditionId，右键点击EditionId 选择“修改“，在弹出的对话框中将第二项”数值数据“的内容改为Professional，然后点击确定 即可！（windows+r）输入regedit即可进入<br><img src="https://gitee.com/hieiko/blog/raw/master/1585323979_20200327234608600_10110.png" srcset="/img/loading.gif" alt=""></p><h2 id="3、安装docker"><a href="#3、安装docker" class="headerlink" title="3、安装docker"></a>3、安装docker</h2><p><a href="https://www.docker.com/products/docker-desktop" target="_blank" rel="noopener">docker下载地址</a><br>安装时取消勾选window容器。如果仍然失败可以新建一个containers.bat文件以管理员身份运行 文件内容如下<br>文件博主存放在云盘<br><a href="https://pan.baidu.com/s/1MtTDkZunkRnsEHgwE7X9Fw" target="_blank" rel="noopener">https://pan.baidu.com/s/1MtTDkZunkRnsEHgwE7X9Fw</a><br>提取码：r991<br>下载下来可以直接运行</p><h3 id="注意仅当提示由于注册表追踪-或container之类的报错可以使用！！！"><a href="#注意仅当提示由于注册表追踪-或container之类的报错可以使用！！！" class="headerlink" title="注意仅当提示由于注册表追踪 或container之类的报错可以使用！！！"></a>注意仅当提示由于注册表追踪 或container之类的报错可以使用！！！</h3><h2 id="4、修改镜像源"><a href="#4、修改镜像源" class="headerlink" title="4、修改镜像源"></a>4、修改镜像源</h2><p>右击docker 选择settings 选择Docker Engine 进行修改<br>如下图所示<br><img src="https://gitee.com/hieiko/blog/raw/master/1585324960_20200328000223201_29176.png" srcset="/img/loading.gif" alt="F8UWD6ACQR$FQVZ((QU98C8"><br>之后可以参考<a href="https://www.nekilc.com/2020/22X88J.html" target="_blank" rel="noopener">Docker部署Mysql数据库</a>进行部署！<br>溜了溜了</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>教程</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hexo搭建教程</title>
     <link href="/2020/3253SXB.html"/>
     <url>/2020/3253SXB.html</url>

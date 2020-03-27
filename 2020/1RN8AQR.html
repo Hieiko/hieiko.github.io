@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="Hieiko">
   <meta name="keywords" content="">
-  <title>Hexo搭建教程 - Hieiko</title>
+  <title>windows家庭版 安装docker教程 - Hieiko</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css" />
 <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
@@ -124,7 +124,7 @@
               
                 <p class="mt-3 post-meta">
                   <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-                  Thursday, March 26th 2020, 1:45 am
+                  Friday, March 27th 2020, 11:08 pm
                 </p>
               
 
@@ -133,7 +133,7 @@
                   
                   <span class="post-meta">
                     <i class="far fa-chart-bar"></i>
-                    497 字
+                    605 字
                   </span>
                 
 
@@ -141,7 +141,7 @@
                   
                   <span class="post-meta">
                       <i class="far fa-clock"></i>
-                      1 分钟
+                      2 分钟
                   </span>
                 
 
@@ -169,40 +169,22 @@
           <div class="post-content mx-auto" id="post">
             
             <div class="markdown-body">
-              <h1 id="Hexo搭建教程"><a href="#Hexo搭建教程" class="headerlink" title="Hexo搭建教程"></a>Hexo搭建教程</h1><h2 id="1、下载git"><a href="#1、下载git" class="headerlink" title="1、下载git"></a>1、下载git</h2><p>git下载：<a href="https://git-scm.com/download/" target="_blank" rel="noopener">git下载地址</a><br>安装很简单 应该大家都会</p>
-<h2 id="2、下载node-js"><a href="#2、下载node-js" class="headerlink" title="2、下载node.js"></a>2、下载node.js</h2><p>node.js下载：<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">node.js下载地址</a><br>node.js安装：<a href="https://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="noopener">node.js安装</a></p>
-<p>安装完前面两个之后 可以检测一下是否安装成功<br>在Dos（windows+r键 然后输入cmd即可进入）下输入以下命令</p>
-<pre><code class="shell">git --version
-node -v
-</code></pre>
-<p><img src="https://gitee.com/hieiko/blog/raw/master/1585160201_20200326021609022_31974.png" srcset="/img/loading.gif" alt=""><br>返回如下即可</p>
-<h2 id="3、打开Gitbash，安装hexo"><a href="#3、打开Gitbash，安装hexo" class="headerlink" title="3、打开Gitbash，安装hexo"></a>3、打开Gitbash，安装hexo</h2><pre><code class="shell">$ npm install hexo-cli -g 
-$ hexo init blog
-$ cd blog
-$ npm install
-$ hexo server</code></pre>
-<h2 id="4、初始化本地博客"><a href="#4、初始化本地博客" class="headerlink" title="4、初始化本地博客"></a>4、初始化本地博客</h2><pre><code>$ hexo generate (hexo g) 生成静态文件
-$ hexo server (hexo s) 启动本地服务
-$ hexo deploy (hexo d) 提交到远程仓库
-$ hexo new page &quot;xx&quot;(hexo n page) 创建页面 
-$ hexo new &quot;xx&quot; (hexo n &quot;&quot;) 创建文章
-$ hexo d -g 生成静态并提交到远程仓库
-$ hexo s -g 生成静态文件并启动本地预览
-$ hexo clean 清除本地 public 文件</code></pre><p>此时只需要运行以下代码段即可</p>
-<pre><code>$ hexo d -g 生成静态并提交到远程仓库
-$ hexo s -g 生成静态文件并启动本地预览</code></pre><p><img src="https://gitee.com/hieiko/blog/raw/master/1585160753_20200326022522019_15892.png" srcset="/img/loading.gif" alt=""><br>通过访问<a href="http://localhost:4000/" target="_blank" rel="noopener">本地博客</a>看到上图效果</p>
-<h2 id="5、将博客部署到GitHub"><a href="#5、将博客部署到GitHub" class="headerlink" title="5、将博客部署到GitHub"></a>5、将博客部署到GitHub</h2><h3 id="注册GitHub账户"><a href="#注册GitHub账户" class="headerlink" title="注册GitHub账户"></a>注册GitHub账户</h3><p><a href="https://github.com/" target="_blank" rel="noopener">github注册</a></p>
-<p>注册成功后，登录账号，点击右侧 “+” 号，然后点击 New repository 添加仓库，如图 ：注册成功后，登录账号，点击右侧 “+” 号，然后点击 New repository 添加仓库，如图 ：<br><img src="https://gitee.com/hieiko/blog/raw/master/1585161119_20200326023131503_17432.png" srcset="/img/loading.gif" alt=""></p>
-<h3 id="GitHub-添加-SSH-key"><a href="#GitHub-添加-SSH-key" class="headerlink" title="GitHub 添加 SSH key"></a>GitHub 添加 SSH key</h3><p>检查本地是否有ssh key</p>
-<pre><code>$ cd ~/.ssh
-$ ls
-</code></pre><p>没有的话自己生成一个</p>
-<pre><code>$ ssh-keygen -t rsa 
-</code></pre><p>然后输入用户名 和密码 然后输入以下命令获取ssh key的值</p>
-<pre><code>$ clip &lt; ~/.ssh/id_rsa.pub&quot;</code></pre><p>然后将其添加到</p>
-<p><img src="https://gitee.com/hieiko/blog/raw/master/1585162149_20200326024858631_7204.png" srcset="/img/loading.gif" alt=""></p>
-<h3 id="将deploy配置信息进行修改"><a href="#将deploy配置信息进行修改" class="headerlink" title="将deploy配置信息进行修改"></a>将deploy配置信息进行修改</h3><p>找到下图路径中<br><img src="https://gitee.com/hieiko/blog/raw/master/1585163081_20200326030429046_1058.png" srcset="/img/loading.gif" alt=""><br>_config.yml文件修改以下代码段<br><img src="https://gitee.com/hieiko/blog/raw/master/1585163193_20200326030620882_15219.png" srcset="/img/loading.gif" alt=""><br>图中Hieiko为我的个人id 修改时要改成你自己的</p>
-<h3 id="通过http-Hieiko-github-io-即可通过github远程仓库访问该博客"><a href="#通过http-Hieiko-github-io-即可通过github远程仓库访问该博客" class="headerlink" title="通过http://Hieiko.github.io 即可通过github远程仓库访问该博客"></a>通过<a href="http://Hieiko.github.io" target="_blank" rel="noopener">http://Hieiko.github.io</a> 即可通过github远程仓库访问该博客</h3><p>之后的一些细则 博主会后续继续更新！</p>
+              <h1 id="windows家庭版-安装docker教程"><a href="#windows家庭版-安装docker教程" class="headerlink" title="windows家庭版 安装docker教程"></a>windows家庭版 安装docker教程</h1><p>  Docker(小鲸鱼) 是一个开源的应用容器引擎，基于<a href="https://www.runoob.com/go/go-tutorial.html" target="_blank" rel="noopener">Go语言</a> 并遵从 Apache2.0 协议开源。</p>
+<p>Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。</p>
+<p>容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性能开销极低。</p>
+<p>但是大多数windows10都是家庭版 并不支持 docker的安装 由于博主是学生党 没有经济能力购买专业版windows 于是乎走上了白嫖这一道路（博主绝对支持大家拥有版权意识） 下面给大家介绍如何在家庭版win10上安装docker。</p>
+<h2 id="1、开启Hyper-V"><a href="#1、开启Hyper-V" class="headerlink" title="1、开启Hyper-V"></a>1、开启Hyper-V</h2><p>添加方法非常简单，把以下内容保存为.cmd文件，然后以管理员身份打开这个文件。提示重启时保存好文件重启吧，重启完成就能使用功能完整的Hyper-V了。</p>
+<pre><code>pushd &quot;%~dp0&quot;
+
+dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt
+
+for /f %%i in (&#39;findstr /i . hyper-v.txt 2^&gt;nul&#39;) do dism /online /norestart /add-package:&quot;%SystemRoot%\servicing\Packages\%%i&quot;
+
+del hyper-v.txt
+
+Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL</code></pre><h2 id="2、伪装成专业版"><a href="#2、伪装成专业版" class="headerlink" title="2、伪装成专业版"></a>2、伪装成专业版</h2><p>由于Docker Desktop会在安装的时候检测系统版本，直接安装会显示安装失败。所以需要改下注册表绕过安装检测。打开注册表，定位到HKEY_LOCAL_MACHINE\software\Microsoft\Windows NT\CurrentVersion，点击current version，在右侧找到EditionId，右键点击EditionId 选择“修改“，在弹出的对话框中将第二项”数值数据“的内容改为Professional，然后点击确定 即可！（windows+r）输入regedit即可进入<br><img src="https://gitee.com/hieiko/blog/raw/master/1585323979_20200327234608600_10110.png" srcset="/img/loading.gif" alt=""></p>
+<h2 id="3、安装docker"><a href="#3、安装docker" class="headerlink" title="3、安装docker"></a>3、安装docker</h2><p><a href="https://www.docker.com/products/docker-desktop" target="_blank" rel="noopener">docker下载地址</a><br>安装时取消勾选window容器。如果仍然失败可以新建一个containers.bat文件以管理员身份运行 文件内容如下<br>文件博主存放在云盘<br><a href="https://pan.baidu.com/s/1MtTDkZunkRnsEHgwE7X9Fw" target="_blank" rel="noopener">https://pan.baidu.com/s/1MtTDkZunkRnsEHgwE7X9Fw</a><br>提取码：r991<br>下载下来可以直接运行</p>
+<h3 id="注意仅当提示由于注册表追踪-或container之类的报错可以使用！！！"><a href="#注意仅当提示由于注册表追踪-或container之类的报错可以使用！！！" class="headerlink" title="注意仅当提示由于注册表追踪 或container之类的报错可以使用！！！"></a>注意仅当提示由于注册表追踪 或container之类的报错可以使用！！！</h3><h2 id="4、修改镜像源"><a href="#4、修改镜像源" class="headerlink" title="4、修改镜像源"></a>4、修改镜像源</h2><p>右击docker 选择settings 选择Docker Engine 进行修改<br>如下图所示<br><img src="https://gitee.com/hieiko/blog/raw/master/1585324960_20200328000223201_29176.png" srcset="/img/loading.gif" alt="F8UWD6ACQR$FQVZ((QU98C8"><br>之后可以参考<a href="https://www.nekilc.com/2020/22X88J.html" target="_blank" rel="noopener">Docker部署Mysql数据库</a>进行部署！<br>溜了溜了</p>
 
             </div>
             <hr>
@@ -227,15 +209,15 @@ $ ls
                   <div class="post-prev col-6">
                     
                     
-                      <a href="/2020/1RN8AQR.html">
-                        <i class="fa fa-chevron-left"></i>
-                        <span class="hidden-mobile">windows家庭版 安装docker教程</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </div>
                   <div class="post-next col-6">
                     
+                    
+                      <a href="/2020/3253SXB.html">
+                        <span class="hidden-mobile">Hexo搭建教程</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="fa fa-chevron-right"></i>
+                      </a>
                     
                   </div>
                 </div>
@@ -411,7 +393,7 @@ $ ls
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Hexo搭建教程&nbsp;",
+        "windows家庭版 安装docker教程&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
