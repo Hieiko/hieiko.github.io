@@ -18,6 +18,18 @@
     </categories>
     
     
+    <tags>
+      
+      <tag>git</tag>
+      
+      <tag>Go语言</tag>
+      
+      <tag>数据库</tag>
+      
+      <tag>Docker</tag>
+      
+    </tags>
+    
   </entry>
   
   
@@ -36,6 +48,14 @@
       
     </categories>
     
+    
+    <tags>
+      
+      <tag>node.js</tag>
+      
+      <tag>git</tag>
+      
+    </tags>
     
   </entry>
   
