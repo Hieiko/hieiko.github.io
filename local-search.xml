@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Hexo搭建教程</title>
+    <link href="/2020/3253SXB.html"/>
+    <url>/2020/3253SXB.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo搭建教程"><a href="#Hexo搭建教程" class="headerlink" title="Hexo搭建教程"></a>Hexo搭建教程</h1><h2 id="1、下载git"><a href="#1、下载git" class="headerlink" title="1、下载git"></a>1、下载git</h2><p>git下载：<a href="https://git-scm.com/download/" target="_blank" rel="noopener">git下载地址</a><br>安装很简单 应该大家都会</p><h2 id="2、下载node-js"><a href="#2、下载node-js" class="headerlink" title="2、下载node.js"></a>2、下载node.js</h2><p>node.js下载：<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">node.js下载地址</a><br>node.js安装：<a href="https://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="noopener">node.js安装</a></p><p>安装完前面两个之后 可以检测一下是否安装成功<br>在Dos（windows+r键 然后输入cmd即可进入）下输入以下命令</p><pre><code class="shell">git --versionnode -v</code></pre><p><img src="https://gitee.com/hieiko/blog/raw/master/1585160201_20200326021609022_31974.png" srcset="/img/loading.gif" alt=""><br>返回如下即可</p><h2 id="3、打开Gitbash，安装hexo"><a href="#3、打开Gitbash，安装hexo" class="headerlink" title="3、打开Gitbash，安装hexo"></a>3、打开Gitbash，安装hexo</h2><pre><code class="shell">$ npm install hexo-cli -g $ hexo init blog$ cd blog$ npm install$ hexo server</code></pre><h2 id="4、初始化本地博客"><a href="#4、初始化本地博客" class="headerlink" title="4、初始化本地博客"></a>4、初始化本地博客</h2><pre><code>$ hexo generate (hexo g) 生成静态文件$ hexo server (hexo s) 启动本地服务$ hexo deploy (hexo d) 提交到远程仓库$ hexo new page &quot;xx&quot;(hexo n page) 创建页面 $ hexo new &quot;xx&quot; (hexo n &quot;&quot;) 创建文章$ hexo d -g 生成静态并提交到远程仓库$ hexo s -g 生成静态文件并启动本地预览$ hexo clean 清除本地 public 文件</code></pre><p>此时只需要运行以下代码段即可</p><pre><code>$ hexo d -g 生成静态并提交到远程仓库$ hexo s -g 生成静态文件并启动本地预览</code></pre><p><img src="https://gitee.com/hieiko/blog/raw/master/1585160753_20200326022522019_15892.png" srcset="/img/loading.gif" alt=""><br>通过访问<a href="http://localhost:4000/" target="_blank" rel="noopener">本地博客</a>看到上图效果</p><h2 id="5、将博客部署到GitHub"><a href="#5、将博客部署到GitHub" class="headerlink" title="5、将博客部署到GitHub"></a>5、将博客部署到GitHub</h2><h3 id="注册GitHub账户"><a href="#注册GitHub账户" class="headerlink" title="注册GitHub账户"></a>注册GitHub账户</h3><p><a href="https://github.com/" target="_blank" rel="noopener">github注册</a></p><p>注册成功后，登录账号，点击右侧 “+” 号，然后点击 New repository 添加仓库，如图 ：注册成功后，登录账号，点击右侧 “+” 号，然后点击 New repository 添加仓库，如图 ：<br><img src="https://gitee.com/hieiko/blog/raw/master/1585161119_20200326023131503_17432.png" srcset="/img/loading.gif" alt=""></p><h3 id="GitHub-添加-SSH-key"><a href="#GitHub-添加-SSH-key" class="headerlink" title="GitHub 添加 SSH key"></a>GitHub 添加 SSH key</h3><p>检查本地是否有ssh key</p><pre><code>$ cd ~/.ssh$ ls</code></pre><p>没有的话自己生成一个</p><pre><code>$ ssh-keygen -t rsa </code></pre><p>然后输入用户名 和密码 然后输入以下命令获取ssh key的值</p><pre><code>$ clip &lt; ~/.ssh/id_rsa.pub&quot;</code></pre><p>然后将其添加到</p><p><img src="https://gitee.com/hieiko/blog/raw/master/1585162149_20200326024858631_7204.png" srcset="/img/loading.gif" alt=""></p><h3 id="将deploy配置信息进行修改"><a href="#将deploy配置信息进行修改" class="headerlink" title="将deploy配置信息进行修改"></a>将deploy配置信息进行修改</h3><p>找到下图路径中<br><img src="https://gitee.com/hieiko/blog/raw/master/1585163081_20200326030429046_1058.png" srcset="/img/loading.gif" alt=""><br>_config.yml文件修改以下代码段<br><img src="https://gitee.com/hieiko/blog/raw/master/1585163193_20200326030620882_15219.png" srcset="/img/loading.gif" alt=""><br>图中Hieiko为我的个人id 修改时要改成你自己的</p><h3 id="通过http-Hieiko-github-io-即可通过github远程仓库访问该博客"><a href="#通过http-Hieiko-github-io-即可通过github远程仓库访问该博客" class="headerlink" title="通过http://Hieiko.github.io 即可通过github远程仓库访问该博客"></a>通过<a href="http://Hieiko.github.io" target="_blank" rel="noopener">http://Hieiko.github.io</a> 即可通过github远程仓库访问该博客</h3><p>之后的一些细则 博主会后续继续更新！</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>教程</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
